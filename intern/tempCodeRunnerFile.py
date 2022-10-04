@@ -1,2 +1,2 @@
-if|svg|png|jpg))', url)
-        if not filename:
+
+async def cat():

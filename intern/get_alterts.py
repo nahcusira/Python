@@ -1,8 +1,25 @@
-#https://bit.ly/2lVhlLX
+from bs4 import BeautifulSoup
 import requests
-from lxml import html
-url = 'https://www.us-cert.gov/ncas/alerts'
-doc = html.fromstring(requests.get(url).text)
-print("The number of security alerts issued by US-CERT in the current year:")
-print(len(doc.cssselect('.item-list li')))
-  
+
+
+url = 'https://www.us-cert.gov/ncas/alerts/2022'
+
+r = requests.get(url)
+
+soup = BeautifulSoup(r.text, "html.parser")
+
+links = []
+
+for link in soup.find_all('a'):
+    if link.get('href') != None:
+        if link.get('href').startswith('/ncas/alerts/aa22'):
+            links.append(link.get('href'))
+
+count = 0
+
+for i in range(0, len(links)):
+    urls = 'https://www.cisa.gov/uscert' + links[i]
+    print(urls)
+    count+=1
+
+print(count)

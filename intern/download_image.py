@@ -12,8 +12,6 @@ try:
         if not filename:
             continue
         with open(filename.group(1), 'wb') as f:
-            # if 'http' not in url:
-            #     url = '{}'.format(url)
             response = requests.get('https:' + url)
             f.write(response.content)
     print("Download complete, downloaded images can be found in current directory!")
