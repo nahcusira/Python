@@ -39,50 +39,11 @@ with open('alert.csv','w') as file:
             revised = ""
         else:
             revised = revised.group(1).strip().split('|')[0]
-        # tip = soup.select('.tip-intro')
+        tip = soup.find('p', class_= "tip-intro")
+        if tip == None:
+            tip = ""
+        else:
+            tip = tip.getText()
 
-        # # tip = soup.find(class_= "tip-intro")
-        # if tip == None:
-        #     tip = ""
-        # else:
-        #     print(tip)
-
-        writer.writerow([link, alertId[0].getText(), alertName[0].getText(), releaseDate, revised])#, tip])
+        writer.writerow([link, alertId[0].getText(), alertName[0].getText(), releaseDate, revised, tip])
         
-
-
-
-
-
-
-
-
-
-
-# from bs4 import BeautifulSoup
-# import requests
-# import csv
-
-
-# url = 'https://www.us-cert.gov/ncas/alerts/2022'
-
-# r = requests.get(url)
-
-# soup = BeautifulSoup(r.text, "html.parser")
-
-# links = []
-
-# for link in soup.find_all('a'):
-#     a = link.get('href')
-#     if a != None:
-#         if a.startswith('/ncas/alerts/aa22'):
-#             links.append(a)
-# with open('new.csv','w') as file:
-#     for link in links:
-#         file.write(link)
-        
-
-
-
-
-
