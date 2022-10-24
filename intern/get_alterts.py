@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-url = 'https://www.us-cert.gov/ncas/alerts/2022'
+url = 'https://www.us-cert.gov/ncas/alerts'
 
 r = requests.get(url)
 
