@@ -42,7 +42,6 @@ def DecodeRot13(text):
 
 if __name__ =='__main__' : 
     bi=decodeBase64(text)
-    # print(bi)
     hex=Binary_to_Hex(bi)
     dec=Hex_to_Decimal(hex)
     print(dec)
