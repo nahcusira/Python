@@ -1,0 +1,20 @@
+{
+    "emp_name": {
+        "0": "John",
+        "1": "Jane",
+        "2": "Zoe",
+        "3": "Karen"
+    },
+    "emp_email": {
+        "0": "john@example.com",
+        "1": "jane@example.com",
+        "2": "zoe@example.com",
+        "3": "karen@example.com"
+    },
+    "job_profile": {
+        "0": "intern",
+        "1": "developer",
+        "2": "tester",
+        "3": "manager"
+    }
+}
