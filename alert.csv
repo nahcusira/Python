@@ -1,63 +1,61 @@
 Alert Link,Alert ID,Alert Name,Release Date,Last revised,Tips
-https://www.cisa.gov/uscert/ncas/alerts/aa22-279a,Alert (AA22-279A),Top CVEs Actively Exploited By People’s Republic of China State-Sponsored Cyber Actors,"October 06, 2022",,
-https://www.cisa.gov/uscert/ncas/alerts/aa22-277a,Alert (AA22-277A),Impacket and Exfiltration Tool Used to Steal Sensitive Information from Defense Industrial Base Organization,"October 04, 2022  ","October 05, 2022","Actions to Help Protect Against APT Cyber Activity:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-294a,AA22-294A,#StopRansomware: Daixin Team,"October 21, 2022  ","October 26, 2022","Actions to take today to mitigate cyber threats from ransomware:
+• Install updates for operating systems, software, and firmware as soon as they are released.
+• Require phishing-resistant MFA for as many services as possible.
+• Train users to recognize and report phishing attempts."
+https://www.cisa.gov/uscert/ncas/alerts/aa22-279a,AA22-279A,Top CVEs Actively Exploited By People’s Republic of China State-Sponsored Cyber Actors,"October 06, 2022",,
+https://www.cisa.gov/uscert/ncas/alerts/aa22-277a,AA22-277A,Impacket and Exfiltration Tool Used to Steal Sensitive Information from Defense Industrial Base Organization,"October 04, 2022  ","October 05, 2022","Actions to Help Protect Against APT Cyber Activity:
 • Enforce multifactor authentication (MFA) on all user accounts.
 • Implement network segmentation to separate network segments based on role and functionality.
 • Update software, including operating systems, applications, and firmware, on network assets.
 • Audit account usage."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-265a,Alert (AA22-265A),Control System Defense: Know the Opponent,"September 22, 2022",,Traditional approaches to securing OT/ICS do not adequately address current threats. 
-https://www.cisa.gov/uscert/ncas/alerts/aa22-264a,Alert (AA22-264A),Iranian State Actors Conduct Cyber Operations Against the Government of Albania,"September 21, 2022  ","September 23, 2022",
-https://www.cisa.gov/uscert/ncas/alerts/aa22-257a,Alert (AA22-257A),Iranian Islamic Revolutionary Guard Corps-Affiliated Cyber Actors Exploiting Vulnerabilities for Data Extortion and Disk Encryption for Ransom Operations,"September 14, 2022",,"Actions to take today to protect against ransom operations:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-265a,AA22-265A,Control System Defense: Know the Opponent,"September 22, 2022",,Traditional approaches to securing OT/ICS do not adequately address current threats. 
+https://www.cisa.gov/uscert/ncas/alerts/aa22-264a,AA22-264A,Iranian State Actors Conduct Cyber Operations Against the Government of Albania,"September 21, 2022  ","September 23, 2022",
+https://www.cisa.gov/uscert/ncas/alerts/aa22-257a,AA22-257A,Iranian Islamic Revolutionary Guard Corps-Affiliated Cyber Actors Exploiting Vulnerabilities for Data Extortion and Disk Encryption for Ransom Operations,"September 14, 2022",,"Actions to take today to protect against ransom operations:
 • Keep systems and software updated and prioritize remediating known exploited vulnerabilities.
 • Enforce MFA.
 • Make offline backups of your data."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-249a,Alert (AA22-249A),#StopRansomware: Vice Society,"September 06, 2022  ","September 08, 2022","Actions to take today to mitigate cyber threats from ransomware:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-249a,AA22-249A,#StopRansomware: Vice Society,"September 06, 2022  ","September 08, 2022","Actions to take today to mitigate cyber threats from ransomware:
 • Prioritize and remediate known exploited vulnerabilities.
 • Train users to recognize and report phishing attempts.
 • Enable and enforce multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-228a,Alert (AA22-228A),Threat Actors Exploiting Multiple CVEs Against Zimbra Collaboration Suite,"August 16, 2022  ","September 27, 2022","Actions for ZCS administrators to take today to mitigate malicious cyber activity:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-228a,AA22-228A,Threat Actors Exploiting Multiple CVEs Against Zimbra Collaboration Suite,"August 16, 2022  ","October 19, 2022","Actions for ZCS administrators to take today to mitigate malicious cyber activity:
 • Patch all systems and prioritize patching known exploited vulnerabilities.
 • Deploy detection signatures and hunt for indicators of compromise (IOCs).
 • If ZCS was compromised, remediate malicious activity."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-223a,Alert (AA22-223A),#StopRansomware: Zeppelin Ransomware,"August 11, 2022",,"Actions to take today to mitigate cyber threats from ransomware:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-223a,AA22-223A,#StopRansomware: Zeppelin Ransomware,"August 11, 2022",,"Actions to take today to mitigate cyber threats from ransomware:
 • Prioritize remediating known exploited vulnerabilities.
 • Train users to recognize and report phishing attempts.
 • Enable and enforce multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-216a,Alert (AA22-216A),2021 Top Malware Strains,"August 04, 2022  ","August 25, 2022","Immediate Actions You Can Take Now to Protect Against Malware:
-
+https://www.cisa.gov/uscert/ncas/alerts/aa22-216a,AA22-216A,2021 Top Malware Strains,"August 04, 2022  ","August 25, 2022","Immediate Actions You Can Take Now to Protect Against Malware:
 • Patch all systems and prioritize patching known exploited vulnerabilities.
 • Enforce multifactor authentication (MFA).
 • Secure Remote Desktop Protocol (RDP) and other risky services.
 • Make offline backups of your data.
 • Provide end-user awareness and training about social engineering and phishing."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-187a,Alert (AA22-187A),North Korean State-Sponsored Cyber Actors Use Maui Ransomware to Target the Healthcare and Public Health Sector ,"July 06, 2022  ","July 07, 2022",
-https://www.cisa.gov/uscert/ncas/alerts/aa22-181a,Alert (AA22-181A),#StopRansomware: MedusaLocker ,"June 30, 2022  ","August 11, 2022","Actions to take today to mitigate cyber threats from ransomware:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-187a,AA22-187A,North Korean State-Sponsored Cyber Actors Use Maui Ransomware to Target the Healthcare and Public Health Sector ,"July 06, 2022  ","July 07, 2022",
+https://www.cisa.gov/uscert/ncas/alerts/aa22-181a,AA22-181A,#StopRansomware: MedusaLocker ,"June 30, 2022  ","August 11, 2022","Actions to take today to mitigate cyber threats from ransomware:
 • Prioritize remediating known exploited vulnerabilities.
 • Train users to recognize and report phishing attempts.
 • Enable and enforce multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-174a,Alert (AA22-174A),Malicious Cyber Actors Continue to Exploit Log4Shell in VMware Horizon Systems,"June 23, 2022  ","July 18, 2022","Actions to take today:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-174a,AA22-174A,Malicious Cyber Actors Continue to Exploit Log4Shell in VMware Horizon Systems,"June 23, 2022  ","July 18, 2022","Actions to take today:
 • Install fixed builds, updating all affected VMware Horizon and UAG systems to the latest versions. If updates or workarounds were not promptly applied following VMware’s release of updates for Log4Shell in December 2021, treat all affected VMware systems as compromised.
 • Minimize the internet-facing attack surface by hosting essential services on a segregated demilitarized (DMZ) zone, ensuring strict network perimeter access controls, and implementing regularly updated web application firewalls (WAFs) in front of public-facing services"
-https://www.cisa.gov/uscert/ncas/alerts/aa22-158a,Alert (AA22-158A),People’s Republic of China State-Sponsored Cyber Actors Exploit Network Providers and Devices,"June 07, 2022  ","June 10, 2022","Best Practices
+https://www.cisa.gov/uscert/ncas/alerts/aa22-158a,AA22-158A,People’s Republic of China State-Sponsored Cyber Actors Exploit Network Providers and Devices,"June 07, 2022  ","June 10, 2022","Best Practices
 • Apply patches as soon as possible
 • Disable unnecessary ports and protocols
 • Replace end-of-life infrastructure
 • Implement a centralized patch management system"
-https://www.cisa.gov/uscert/ncas/alerts/aa22-152a,Alert (AA22-152A),Karakurt Data Extortion Group ,"June 01, 2022  ","June 02, 2022","Actions to take today to mitigate cyber threats from ransomware:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-152a,AA22-152A,Karakurt Data Extortion Group ,"June 01, 2022  ","June 02, 2022","Actions to take today to mitigate cyber threats from ransomware:
 • Prioritize patching known exploited vulnerabilities.
 • Train users to recognize and report phishing attempts.
 • Enforce multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-138b,Alert (AA22-138B),Threat Actors Chaining Unpatched VMware Vulnerabilities for Full System Control ,"May 18, 2022  ","June 02, 2022",
-https://www.cisa.gov/uscert/ncas/alerts/aa22-138a,Alert (AA22-138A),Threat Actors Exploiting F5 BIG-IP CVE-2022-1388,"May 18, 2022  ","October 12, 2022","Actions for administrators to take today:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-138b,AA22-138B,Threat Actors Chaining Unpatched VMware Vulnerabilities for Full System Control ,"May 18, 2022  ","June 02, 2022",
+https://www.cisa.gov/uscert/ncas/alerts/aa22-138a,AA22-138A,Threat Actors Exploiting F5 BIG-IP CVE-2022-1388,"May 18, 2022  ","October 12, 2022","Actions for administrators to take today:
 • Do not expose management interfaces to the internet.
 • Enforce multi-factor authentication.
 • Consider using CISA’s Cyber Hygiene Services."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-137a,Alert (AA22-137A),Weak Security Controls and Practices Routinely Exploited for Initial Access,"May 17, 2022",,"Best Practices to Protect Your Systems:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-137a,AA22-137A,Weak Security Controls and Practices Routinely Exploited for Initial Access,"May 17, 2022",,"Best Practices to Protect Your Systems:
 • Control access.
 • Harden Credentials.
 • Establish centralized log management.
@@ -65,30 +63,30 @@ https://www.cisa.gov/uscert/ncas/alerts/aa22-137a,Alert (AA22-137A),Weak Securit
 • Employ detection tools.
 • Operate services exposed on internet-accessible hosts with secure configurations.
 • Keep software updated."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-131a,Alert (AA22-131A),Protecting Against Cyber Threats to Managed Service Providers and their Customers,"May 11, 2022",,"Tactical actions for MSPs and their customers to take today:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-131a,AA22-131A,Protecting Against Cyber Threats to Managed Service Providers and their Customers,"May 11, 2022",,"Tactical actions for MSPs and their customers to take today:
 • Identify and disable accounts that are no longer in use.
 • Enforce MFA on MSP accounts that access the customer environment and monitor for unexplained failed authentication.
 • Ensure MSP-customer contracts transparently identify ownership of ICT security roles and responsibilities."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-117a,Alert (AA22-117A),2021 Top Routinely Exploited Vulnerabilities,"April 27, 2022  ","April 28, 2022",
-https://www.cisa.gov/uscert/ncas/alerts/aa22-110a,Alert (AA22-110A),Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure,"April 20, 2022  ","May 09, 2022","Actions critical infrastructure organizations should implement to immediately protect against Russian state-sponsored and criminal cyber threats:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-117a,AA22-117A,2021 Top Routinely Exploited Vulnerabilities,"April 27, 2022  ","April 28, 2022",
+https://www.cisa.gov/uscert/ncas/alerts/aa22-110a,AA22-110A,Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure,"April 20, 2022  ","May 09, 2022","Actions critical infrastructure organizations should implement to immediately protect against Russian state-sponsored and criminal cyber threats:
 • Patch all systems. Prioritize patching known exploited vulnerabilities.
 • Enforce multifactor authentication.
 • Secure and monitor Remote Desktop Protocol and other risky services.
 • Provide end-user awareness and training."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-108a,Alert (AA22-108A),TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies ,"April 18, 2022  ","April 20, 2022","Actions to take today to mitigate cyber threats to cryptocurrency:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-108a,AA22-108A,TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies ,"April 18, 2022  ","April 20, 2022","Actions to take today to mitigate cyber threats to cryptocurrency:
 • Patch all systems.
 • Prioritize patching known exploited vulnerabilities.
 • Train users to recognize and report phishing attempts.
 • Use multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-103a,Alert (AA22-103A),APT Cyber Tools Targeting ICS/SCADA Devices,"April 13, 2022  ","May 25, 2022","Actions to Take Today to Protect ICS/SCADA Devices:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-103a,AA22-103A,APT Cyber Tools Targeting ICS/SCADA Devices,"April 13, 2022  ","May 25, 2022","Actions to Take Today to Protect ICS/SCADA Devices:
 • Enforce multifactor authentication for all remote access to ICS networks and devices whenever possible.
 • Change all passwords to ICS/SCADA devices and systems on a consistent schedule, especially all default passwords, to device-unique strong passwords to mitigate password brute force attacks and to give defender monitoring systems opportunities to detect common attacks.
 • Leverage a properly installed continuous OT monitoring solution to log and alert on malicious indicators and behaviors."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-083a,Alert (AA22-083A),"Tactics, Techniques, and Procedures of Indicted State-Sponsored Russian Cyber Actors Targeting the Energy Sector","March 24, 2022",,"Actions to Take Today to Protect Energy Sector Networks:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-083a,AA22-083A,"Tactics, Techniques, and Procedures of Indicted State-Sponsored Russian Cyber Actors Targeting the Energy Sector","March 24, 2022",,"Actions to Take Today to Protect Energy Sector Networks:
 • Implement and ensure robust network segmentation between IT and ICS networks.
 • Enforce MFA to authenticate to a system.
 • Manage the creation of, modification of, use of—and permissions associated with—privileged accounts."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-076a,Alert (AA22-076A),Strengthening Cybersecurity of SATCOM Network Providers and Customers,"March 17, 2022  ","May 10, 2022","Actions to Take Today:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-076a,AA22-076A,Strengthening Cybersecurity of SATCOM Network Providers and Customers,"March 17, 2022  ","May 10, 2022","Actions to Take Today:
 • Use secure methods for authentication.
 • Enforce principle of least privilege.
 • Review trust relationships.
@@ -96,31 +94,26 @@ https://www.cisa.gov/uscert/ncas/alerts/aa22-076a,Alert (AA22-076A),Strengthenin
 • Ensure robust patching and system configuration audits.
 • Monitor logs for suspicious activity.
 • Ensure incident response, resilience, and continuity of operations plans are in place."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-074a,Alert (AA22-074A),Russian State-Sponsored Cyber Actors Gain Network Access by Exploiting Default Multifactor Authentication Protocols and “PrintNightmare” Vulnerability,"March 15, 2022  ","May 02, 2022","Multifactor Authentication (MFA): A Cybersecurity Essential
+https://www.cisa.gov/uscert/ncas/alerts/aa22-074a,AA22-074A,Russian State-Sponsored Cyber Actors Gain Network Access by Exploiting Default Multifactor Authentication Protocols and “PrintNightmare” Vulnerability,"March 15, 2022  ","May 02, 2022","Multifactor Authentication (MFA): A Cybersecurity Essential
 • MFA is one of the most important cybersecurity practices to reduce the risk of intrusions—according to industry research, users who enable MFA are up to 99 percent less likely to have an account compromised.
 • Every organization should enforce MFA for all employees and customers, and every user should sign up for MFA when available.
 • Organizations that implement MFA should review default configurations and modify as necessary, to reduce the likelihood that a sophisticated adversary can circumvent this control."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-057a,Alert (AA22-057A),Update: Destructive Malware Targeting Organizations in Ukraine,"February 26, 2022  ","April 28, 2022","Actions to Take Today:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-057a,AA22-057A,Update: Destructive Malware Targeting Organizations in Ukraine,"February 26, 2022  ","April 28, 2022","Actions to Take Today:
 • Set antivirus and antimalware programs to conduct regular scans.
 • Enable strong spam filters to prevent phishing emails from reaching end users.
 • Filter network traffic.
 • Update software.
 • Require multifactor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-055a,Alert (AA22-055A ),Iranian Government-Sponsored Actors Conduct Cyber Operations Against Global Government and Commercial Networks,"February 24, 2022",,"Actions to Take Today to Protect Against Malicious Activity
+https://www.cisa.gov/uscert/ncas/alerts/aa22-055a,AA22-055A,Iranian Government-Sponsored Actors Conduct Cyber Operations Against Global Government and Commercial Networks,"February 24, 2022",,"Actions to Take Today to Protect Against Malicious Activity
 * Search for indicators of compromise.
 * Use antivirus software.
 * Patch all systems.
 * Prioritize patching known exploited vulnerabilities.
 * Train users to recognize and report phishing attempts.
 * Use multi-factor authentication."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-054a,Alert (AA22-054A),New Sandworm Malware Cyclops Blink Replaces VPNFilter,"February 23, 2022",,"The Sandworm actor, which the United Kingdom and the United States have previously attributed to the Russian GRU, has replaced the exposed VPNFilter malware with a new more advanced framework."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-047a,Alert (AA22-047A),Russian State-Sponsored Cyber Actors Target Cleared Defense Contractor Networks to Obtain Sensitive U.S. Defense Information and Technology,"February 16, 2022",,"Actions to Help Protect Against Russian State-Sponsored Malicious Cyber Activity:
+https://www.cisa.gov/uscert/ncas/alerts/aa22-054a,AA22-054A,New Sandworm Malware Cyclops Blink Replaces VPNFilter,"February 23, 2022",,"The Sandworm actor, which the United Kingdom and the United States have previously attributed to the Russian GRU, has replaced the exposed VPNFilter malware with a new more advanced framework."
+https://www.cisa.gov/uscert/ncas/alerts/aa22-047a,AA22-047A,Russian State-Sponsored Cyber Actors Target Cleared Defense Contractor Networks to Obtain Sensitive U.S. Defense Information and Technology,"February 16, 2022",,"Actions to Help Protect Against Russian State-Sponsored Malicious Cyber Activity:
 • Enforce multifactor authentication.
 • Enforce strong, unique passwords.
 • Enable M365 Unified Audit Logs.
 • Implement endpoint detection and response tools."
-https://www.cisa.gov/uscert/ncas/alerts/aa22-040a,Alert (AA22-040A),2021 Trends Show Increased Globalized Threat of Ransomware,"February 09, 2022  ","February 10, 2022","Immediate Actions You Can Take Now to Protect Against Ransomware: • Update your operating system and software.
-• Implement user training and phishing exercises to raise awareness about the risk of suspicious links and attachments.
-• If you use Remote Desktop Protocol (RDP), secure and monitor it.
-• Make an offline backup of your data.
-• Use multifactor authentication (MFA)."

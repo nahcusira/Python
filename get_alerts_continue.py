@@ -25,13 +25,14 @@ with open('alert.csv','w') as file:
         r = requests.get(link)
         soup = BeautifulSoup(r.text, "html.parser")
         alertId= soup.select('#page-title')
+        alertId =  ''.join(re.findall(r'.{4}-.{4}',alertId[0].getText()))
         alertName = soup.select('#page-sub-title')
-        regexRelease =re.compile(r'Original release date: (.*)(.*)?')
+        regexRelease =re.compile(r'Original release date: (.*)?')
         releaseDate = soup.select('.submitted.meta-text')
         releaseDate = releaseDate[0].getText().strip()
         releaseDate = regexRelease.search(releaseDate)
         releaseDate = releaseDate.group(1).split('|')[0]
-        regexRevised = re.compile(r'Last revised: (.*)(.*)?')
+        regexRevised = re.compile(r'Last revised: (.*)?')
         revised = soup.select('.submitted.meta-text')
         revised = revised[0].getText().strip()
         revised = regexRevised.search(revised)
@@ -45,5 +46,5 @@ with open('alert.csv','w') as file:
         else:
             tip = tip.getText()
 
-        writer.writerow([link, alertId[0].getText(), alertName[0].getText(), releaseDate, revised, tip])
+        writer.writerow([link, alertId, alertName[0].getText(), releaseDate, revised, tip])
         

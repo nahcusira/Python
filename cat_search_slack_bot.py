@@ -3,7 +3,7 @@ from flask import *
 from slackeventsapi import *
 from datetime import *
 
-SLACK_TOKEN = 'xoxb-4157154874326-4155550037543-W59lo3oOoTxjRpgv13Ri2iCY'
+SLACK_TOKEN = 'xoxb-4157154874326-4155550037543-meL2X5lOdE5nDlySM5uxDo9h'
 SIGNING_SECRET="18d9a293cf180a4c3ae1293fa84378ae"
  
 app = Flask(__name__)
@@ -20,24 +20,24 @@ BOT_ID = client.api_call("auth.test")['user_id']
 #     )
 # schedule.every(10).seconds.do(sendImage)
 
-# @ slack_event_adapter.on('message')
-# def message(payload):
-#     event = payload.get('event', {})
-#     channel_id = event.get('channel')
-#     user_id = event.get('user')
-#     text = event.get('text')
-#     if BOT_ID != user_id:
-#         if text.startswith('!cat'):
-#             urllib.request.urlretrieve('https://cataas.com/cat/says/'+text[5:],"./cat_search.png")
-#             client.files_upload(
-#                 channels=channel_id,
-#                 file="./cat_search.png",
-#             )
+@ slack_event_adapter.on('message')
+def message(payload):
+    event = payload.get('event', {})
+    channel_id = event.get('channel')
+    user_id = event.get('user')
+    text = event.get('text')
+    if BOT_ID != user_id:
+        if text.startswith('!cat'):
+            urllib.request.urlretrieve('https://cataas.com/cat/says/'+text[5:],"./cat_search.png")
+            client.files_upload(
+                channels=channel_id,
+                file="./cat_search.png",
+            )
 
     
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 

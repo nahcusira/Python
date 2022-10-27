@@ -1,75 +1,84 @@
-from fastapi import FastAPI
+import codecs
+from fastapi import *
 from pydantic import BaseModel
+import csv
 
 app = FastAPI()
 
 class Item(BaseModel):
+    id: str
     name: str
-    price: float
+    price: str
     quantity: str
 
-class Order(BaseModel):
-    name: str
-    quantity: str
-    price: float
 
-data = {
-    1: {
-        "name": "a",
-        "price": 100,
-        "quantity": "normal"
-    },
-    2: {
-        "name": "b",
-        "price": 200,
-        "quantity": "good"
-    },
-    3: {
-        "name": "c",
-        "price": 50,
-        "quantity": "bad"
-    },
-    4: {
-        "name": "d",
-        "price": 300,
-        "quantity": "good"
-    }
-}
+# data = {
+#     1: {
+#         "name": "a",
+#         "price": 100,
+#         "quantity": "normal"
+#     },
+#     2: {
+#         "name": "b",
+#         "price": 200,
+#         "quantity": "good"
+#     },
+#     3: {
+#         "name": "c",
+#         "price": 50,
+#         "quantity": "bad"
+#     },
+#     4: {
+#         "name": "d",
+#         "price": 300,
+#         "quantity": "good"
+#     }
+# }
 
-cus = {}
+data = {}
 
-@app.get('/')
+@app.post("/upload", tags=["Database"])
+def upload(file: UploadFile = File(...)):
+    csvReader = csv.DictReader(codecs.iterdecode(file.file, 'utf-8'))
+    for rows in csvReader:
+        key = int(rows['id'])
+        data[key] = rows
+    
+    file.file.close()
+    return data
+
+
+@app.get('/', tags=["Item"])
 def getItems():
     return data
 
-@app.get('/{id}')
+@app.get('/{id}', tags=["Item"])
 def getItems(id: int):
-    return data[id]
+    if id in data:
+        return data[id]
+    else:
+        return {"Error" : "Not found"}
 
-@app.post('/{id}')
+@app.post('/{id}', tags=["Item"])
 def addItems(id: int, item : Item):
-    data[id] = item
+    if id in data:
+        return {"Error": "Exist!"}
+    else:
+        data[id] = item
     return data[id]
 
-@app.put('/{id}')
+@app.put('/{id}', tags=["Item"])
 def updateItem(id: int, item : Item):
-    data[id].update(item)
-    return data[id]
+    if id in data:
+        data[id].update(item)
+        return data[id]
+    else:
+        return {"Error" : "Not found"}
 
-@app.delete('/{id}')
+@app.delete('/{id}', tags=["Item"])
 def deleteItem(id: int):
-    del data[id]
-
-@app.get('/12')
-def getOrder():
-    return cus
-
-
-@app.get('/{order_id}')
-def getOrder(order_id: int):
-    return cus[order_id]
-
-@app.post('/{order_id}')
-def createOrder(order_id: int, order: Order):
-    cus[order_id] = order
-    return cus[order_id]
+    if id in data:
+        del data[id]
+        return {"Deleted"}
+    else:
+        return {"Error" : "Not found"}
