@@ -37,7 +37,6 @@ def DecodeRot13(text):
     rot13trans =str.maketrans('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
                               'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm')
     return fromDec.translate(rot13trans)
-#def decodeBase64(text):
 
 
 if __name__ =='__main__' : 

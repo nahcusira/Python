@@ -1,9 +1,9 @@
-import slack, urllib.request, time, schedule
+import slack, urllib.request, time
 from flask import *
 from slackeventsapi import *
 from datetime import *
 
-SLACK_TOKEN = 'xoxb-4157154874326-4155550037543-meL2X5lOdE5nDlySM5uxDo9h'
+SLACK_TOKEN = 'xoxb-4157154874326-4155550037543-e6kVyJfN6QtigZ6b52twhJUg'
 SIGNING_SECRET="18d9a293cf180a4c3ae1293fa84378ae"
  
 app = Flask(__name__)
