@@ -13,9 +13,8 @@ content = soup.select_one("#chapter-content")
 text = content.get_text()
 
 
-
 # Create a new text file and write the text to the file
-with open('content.txt', 'w', encoding = 'utf-8') as file:
+with open('content.txt', 'w', encoding='utf-8') as file:
     file.write(text)
 
 # Find all the img elements
@@ -29,7 +28,7 @@ if not os.path.exists('images'):
 for i, img in enumerate(img_elements):
     img_url = img.get('src')
     img_data = requests.get(img_url).content
-    
+
     # Write the image data to a file
     with open('images/img{}.jpg'.format(i), 'wb') as handler:
         handler.write(img_data)

@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-import csv, re
+import csv
+import re
 
 
 url = 'https://www.us-cert.gov/ncas/alerts'
@@ -18,16 +19,17 @@ for link in soup.find_all('a'):
             links.append('https://www.cisa.gov/uscert' + a)
 
 
-with open('alert.csv','w') as file:
+with open('alert.csv', 'w') as file:
     writer = csv.writer(file)
-    writer.writerow(['Alert Link', 'Alert ID', 'Alert Name', 'Release Date', 'Last revised', 'Tips'])
+    writer.writerow(['Alert Link', 'Alert ID', 'Alert Name',
+                    'Release Date', 'Last revised', 'Tips'])
     for link in links:
         r = requests.get(link)
         soup = BeautifulSoup(r.text, "html.parser")
-        alertId= soup.select('#page-title')
-        alertId =  ''.join(re.findall(r'.{4}-.{4}',alertId[0].getText()))
+        alertId = soup.select('#page-title')
+        alertId = ''.join(re.findall(r'.{4}-.{4}', alertId[0].getText()))
         alertName = soup.select('#page-sub-title')
-        regexRelease =re.compile(r'Original release date: (.*)?')
+        regexRelease = re.compile(r'Original release date: (.*)?')
         releaseDate = soup.select('.submitted.meta-text')
         releaseDate = releaseDate[0].getText().strip()
         releaseDate = regexRelease.search(releaseDate)
@@ -40,11 +42,11 @@ with open('alert.csv','w') as file:
             revised = ""
         else:
             revised = revised.group(1).strip()
-        tip = soup.find('p', class_= "tip-intro")
+        tip = soup.find('p', class_="tip-intro")
         if tip == None:
             tip = ""
         else:
             tip = tip.getText()
 
-        writer.writerow([link, alertId, alertName[0].getText(), releaseDate, revised, tip])
-        
+        writer.writerow(
+            [link, alertId, alertName[0].getText(), releaseDate, revised, tip])

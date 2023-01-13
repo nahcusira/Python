@@ -1,12 +1,16 @@
-import json, csv, argparse
+import json
+import csv
+import argparse
 import pandas as pd
 from openpyxl import Workbook
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input','--input', type=str, help='input file name')
-parser.add_argument('--output','--output', type=str, help='output file name')
-parser.add_argument('-jsontocsv', '--result', action='store_true', help='json to csv')
-parser.add_argument('-jsontoxlsx', '--result1', action='store_true', help='json to xlsx')
+parser.add_argument('--input', '--input', type=str, help='input file name')
+parser.add_argument('--output', '--output', type=str, help='output file name')
+parser.add_argument('-jsontocsv', '--result',
+                    action='store_true', help='json to csv')
+parser.add_argument('-jsontoxlsx', '--result1',
+                    action='store_true', help='json to xlsx')
 
 args = parser.parse_args()
 if args.result:

@@ -20,6 +20,6 @@ count = 0
 for i in range(0, len(links)):
     urls = 'https://www.cisa.gov/uscert' + links[i]
     print(urls)
-    count+=1
+    count += 1
 
 print(count)

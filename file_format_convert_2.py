@@ -1,9 +1,10 @@
 import pandas as pd
-import json, csv, os
-import glob, os
+import json
+import csv
+import os
+import glob
+import os
 import pandas as pd
-
-
 
 
 os.chdir("/home/kami/Desktop/intern/file json")
@@ -25,9 +26,5 @@ for file in glob.glob("*.json"):
 os.chdir("/home/kami/Desktop/intern/file csv")
 for file in glob.glob("*.csv"):
     name1 = file.split('.')[0]
-    df = pd.read_csv (file)
-    df.to_json (name1+'.json')
-
-
-
-
+    df = pd.read_csv(file)
+    df.to_json(name1+'.json')
